@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1F253C;
+    color: #000000;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #444395;
+    color: #fff;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 130px repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #444395;
+    color: #fff;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.slogan {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.paginas {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.politicas {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.redes-sociales {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.slogan p {
+    margin: 0;
+}
+
+.paginas ul li:before {
+    content: "•";
+    margin-right: 10px;
+}
+
+.politicas ul li:before {
+    content: "•";
+    margin-right: 10px;
+}
+
+
+/* Estilos para la caja */
+
+main {
+    padding: 20px;
+}
+
+.caja {
+    width: 95%;
+    height: 570px;
+    margin: 50px auto;
+    background-color: #23274E;
+    border-radius: 20px;
+}
+
+.interna {
+    width: 95%;
+    height: 570px;
+    margin: 0 auto;
+    background-color: #6C61F0;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+
+}
+
+.busqueda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 1fr 60px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.titulo {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.titulo h2 {
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tabla {
+    grid-area: 2 / 1 / 3 / 3;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.descripcion{
+    width: 800px;
+    height: 60px;
+}
+
+.confirmar {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #DC4E3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rechazar {
+    background-color: #DC4E3E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.confirmar,
+.rechazar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
